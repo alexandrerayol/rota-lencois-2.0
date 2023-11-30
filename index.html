@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Rota Lençóis Maranhenses</title>
+    <link rel="stylesheet" href="./styles/Main-style/main.css">
+    <link rel="shortcut icon" href="/styles/assets/favicon/favicon.png" type="image/png" >
+</head>
+<body>
+    <header>
+            <nav class="header-nav">
+                <div class="header-logo">
+                    <img src="styles/assets/header/header-logo.svg" alt="header-logo">
+                </div>
+
+                <div class="header-links">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./pages/passeios/index.html">Passeios</a></li>
+                        <li><a href="#pacotes-details">Pacotes</a></li>
+                        <li><a href="./pages/transporte/index.html">Transporte</a></li>
+                    </ul>
+                </div>
+
+                <div class="header-mobile-icon" onclick="showMobileMenu()">
+                    <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                        <svg width="100" height="100" viewBox="0 0 100 100">
+                          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                          <path class="line line2" d="M 20,50 H 80" />
+                          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                      </button>
+                </div>
+            </nav>
+    </header>
+    <div id="mobile-menu" class="header-mobile-menu" >
+            <ul>
+                <li><a href="./index.html">Home ↗</a></li>
+                <li><a href="./pages/passeios/index.html">Passeios ↗</a></li>
+                <li><a href="#pacotes-details" onclick="forceCloseMenu()">Pacotes ↗</a></li>
+                <li><a href="./pages/transporte/index.html">Transporte ↗</a></li>
+            </ul>
+    </div>
+
+    <section class="slider">
+        <div class="slider-container">
+            <img src="styles/assets/slide-images/EXPERIÊNCIA-compress.jpg" alt="Experiência">
+            <img src="styles/assets/slide-images/PASSEIO-DUNAS-compress.jpg" alt="Passeio dunas">
+            <img src="styles/assets/slide-images/BUGRE-compress.jpg" alt="Passeio bugre">
+            <img src="styles/assets/slide-images/LANCHA-compress.jpg" alt="passeio lancha">
+            <img src="styles/assets/slide-images/PARAÍSO-NATURAL-compress.jpg" alt="paraiso natural">
+            <img src="styles/assets/slide-images/REVOADA-compress.jpg" alt="revoada">
+        </div>
+        <div class="slider-control">
+            <div><img src="styles/assets/slide-images/arrow_circle_left_white_24dp.svg" alt=""></div>
+            <div><img id="pauseButton" src="styles/assets/slide-images/pause_circle_white_24dp.svg" alt=""></div>
+            <div><img src="styles/assets/slide-images/arrow_circle_right_white_24dp.svg" alt=""></div>
+        </div>
+    </section>
+    
+    <main class="main-content">
+
+        <section class="welcome">
+
+            <div class="welcome-tittle container">
+                <h1>Seja Bem Vindo (a)!</h1>
+                <p>O Parque Nacional dos Lençóis Maranhenses é, sem dúvida, uma das paisagens naturais mais deslumbrantes do planeta. Venha descobrir a beleza deste paraíso.</p>
+            </div>
+
+            <div class="welcome-details container" >
+                <div class="welcome-card">
+                    <img src="styles/assets/welcome/welcome-icon-01.svg" alt="Hospedagens">
+                    <h2>Hospedagens</h2>
+                    <p>Temos ótimas opções de hospedagem para você ter uma noite e sono tranquila após um dia cheio de aventura.</p>
+                </div>
+
+                <div class="welcome-card">
+                    <img  src="styles/assets/welcome/welcome-icon-02.svg" alt="Roteiros Inteligentes">
+                    <h2>Roteiros Inteligentes</h2>
+                    <p>Amplas faixas de dunas, Lagoas com águas azul turquesa, e uma variedade de outras atrações aguardam sua visita, oferecendo oportunidades únicas para que você e sua família desfrutem dos passeios mais incríveis da região.</p>
+                </div>
+
+                <div class="welcome-card">
+                    <img src="styles/assets/welcome/welcome-icon-03.svg" alt="Transporte">
+                    <h2>Transporte</h2>
+                    <p>Quer você esteja indo para Barreirinhas ou Santo Amaro, você pode encontrar o seu meio de transporte parao Parque Nacional dos Lençóis Maranhenses conosco.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="pacotes container">
+            <div class="pacotes-tittle">
+                <h2 class="primeiro-titulo">Nossos</h2>
+                <p class="segundo-titulo">pacotes</p>
+            </div>
+            <div class="pacotes-details" id="pacotes-details">
+                <div class="pacotes-card" id="card">
+                    <a href="pages/pacotes/01-dia/index.html"><img src="styles/assets/pacotes/pacotes-01.png" alt=""></a>
+                </div>
+
+                <div class="pacotes-card">
+                    <a href="pages/pacotes/02-dias/index.html"><img src="styles/assets/pacotes/pacotes-02.png" alt=""></a>
+                </div>
+
+                <div class="pacotes-card">
+                    <a href="pages/pacotes/03-dias/index.html"><img src="styles/assets/pacotes/pacotes-03.png" alt=""></a>
+                </div>
+
+                <div class="pacotes-card">
+                    <a href="pages/pacotes/04-dias/index.html"><img src="styles/assets/pacotes/pacotes-04.png" alt=""></a>
+                </div>
+
+                <div class="pacotes-card">
+                    <a href="pages/pacotes/05-dias/index.html"><img src="styles/assets/pacotes/pacotes-05.png" alt=""></a>
+                </div>
+
+                <div class="pacotes-card">
+                    <a href="pages/pacotes/06-dias/index.html"><img src="styles/assets/pacotes/pacotes-06.png" alt=""></a>
+                </div>
+
+                <div class="pacotes-card">
+                    <a href="pages/pacotes/07-dias/index.html"><img src="styles/assets/pacotes/pacotes-07.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section class="parceiros container">
+            <div class="parceiros-tittle">
+                <h2 class="primeiro-titulo">Nossos</h2>
+                <p class="segundo-titulo">parceiros</p>
+            </div>
+            <div class="parceiros-details">
+                <div class="parceiros-item" style="width: 150px;">
+                    <a href="https://api.whatsapp.com/send/?phone=559830422029&text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0" target="_blank"><img src="styles/assets/parceiros/parceiro-farol-lencois.svg" alt=""></a>
+                </div>
+
+                <div class="parceiros-item" style="width: 150px;">
+                    <a href="https://api.whatsapp.com/send/?phone=559830421800&text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0" target="_blank"><img src="styles/assets/parceiros/parceiro-rota-lencois.svg" alt=""></a>
+                </div>
+
+                <div class="parceiros-item" style="margin: 0 -16px;">
+                    <a href="https://api.whatsapp.com/send/?phone=559884024390&text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0
+                    " target="_blank"><img src="styles/assets/parceiros/parceiro-porto-dos-lencois.svg" alt=""></a>
+                </div>
+
+                <div class="parceiros-item">
+                    <a href="
+                    https://api.whatsapp.com/send/?phone=559884018572&text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0" target="_blank"><img src="styles/assets/parceiros/parceiro-passeio-dos-lencois.svg" alt=""></a>
+                </div>
+
+                <div class="parceiros-item">
+                    <a href="https://api.whatsapp.com/send/?phone=559891508966&text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0" target="_blank"><img src="styles/assets/parceiros/encanto-dos-lençois.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="footer-blur">
+        <div class="bg-footer">
+        </div>
+    </div>
+    
+    <footer class="footer-links">
+        <a href="https://facebook.com" target="_blank"><img src="styles/assets/footer/footer-icon-01.svg" alt="icone facebook"></a>
+        <a href="https://instragram.com" target="_blank"><img src="styles/assets/footer/footer-icon-02.svg" alt="icone instragram"></a>
+    </footer>
+
+    <div class="whatsapp-container" >
+        <img id="whatsapp-icon" src="./styles/assets/whatsapp-button/whatsapp-icon.svg" alt="botão whatspapp" onclick="showDialogWhatsapp();">
+        <div class="dialog-box close-wpp">
+            <div class="dialog-header">
+                <div class="close-icon" onclick="showDialogWhatsapp()">
+                    <img src="./styles/assets/whatsapp-button/close-icon.svg" alt="icone fechar caixa dialogo">
+                </div>
+            </div>
+            <div class="dialog-menssage">
+                <h1>Rota lençois</h2>
+                <p>⚠ Atenção ! Nossa agência é especializada em roteiros/pacotes e 
+                    transporte turístico regular diário compartilhado e/ou privado
+                    da cidade de São Luís para a cidade de Barreirinhas. Não trabalhamos
+                    com pacotes aéreos ou reservas de hotéis em São Luís.</p>
+            </div>
+            <div class="dialog-footer">
+                <button class="dialog-button">
+                    <a id="number-link" href="https://api.whatsapp.com/send/?phone=559830421800&text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0"><img src="styles/assets/whatsapp-button/whatsapp-button-icon.svg" alt=""> Iniciar Conversa</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script type="module" src="scripts/database.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/slider.js"></script>
+<script>
+    function forceCloseMenu(){
+        const buttonMenu = document.querySelector('button.menu');
+        buttonMenu.click()
+    }
+</script>
+
+</html>

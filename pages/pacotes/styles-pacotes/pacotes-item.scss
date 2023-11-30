@@ -1,0 +1,48 @@
+main{
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+
+.pacote{
+    margin: 0 auto 4rem auto;
+    max-width: 1000px;
+    padding: 2rem;
+    background-color: #F5FFFE;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    filter: drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.1));
+
+    img{
+        width: 100%;
+        border-radius: .5rem;
+    }
+    h2{
+        width: 100%;
+        text-align: left;
+        font-weight: 700;
+        font-size: 2rem;
+        color: #00979C;
+        font-family: 'Montserrat', sans-serif;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 175%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    a{
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+}

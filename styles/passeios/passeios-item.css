@@ -1,0 +1,42 @@
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.passeio {
+  margin: 0 auto 4rem auto;
+  max-width: 1000px;
+  padding: 2rem;
+  background-color: #F5FFFE;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  filter: drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.1));
+}
+.passeio img {
+  width: 100%;
+}
+.passeio h2 {
+  width: 100%;
+  text-align: left;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #00979C;
+  font-family: "Montserrat", sans-serif;
+}
+.passeio p {
+  font-size: 1rem;
+  line-height: 175%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+}
+.passeio a {
+  display: inline-block;
+  width: 200px;
+  cursor: pointer;
+  margin-top: 1rem;
+}/*# sourceMappingURL=passeios-item.css.map */
