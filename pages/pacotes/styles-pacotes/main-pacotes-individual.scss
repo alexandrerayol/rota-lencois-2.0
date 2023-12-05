@@ -93,7 +93,6 @@ section.right-section{
                 text-align: center;
             }
         }
-
     }
 
     h1{
@@ -119,3 +118,15 @@ section.right-section{
     }
 }
 
+@media (max-width: 860px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.right-section{
+        padding: 2rem 1rem;
+    }
+
+}

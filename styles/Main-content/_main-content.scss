@@ -81,11 +81,11 @@ html{
     width: 500px;
     margin: 0 auto 0 auto;
     h2.primeiro-titulo{
-        text-indent: 72px;
+        text-indent: 26px;
     }
     p.segundo-titulo{
         color: white;
-        text-shadow: none;
+        text-shadow: 0px 5px 6px #00000061;
     }
     margin-bottom: -8rem;
 }
@@ -155,7 +155,7 @@ p.segundo-titulo{
     font-size: 100px;
     text-align: center;
     letter-spacing: 4px;
-    text-shadow: 0px 1px 12px rgba(255, 255, 255, 0.5);
+    text-shadow: 0px 5px 6px #00000061;
 }
 
 @media screen and (max-width: 1000px){
@@ -213,7 +213,7 @@ p.segundo-titulo{
 
 .pacotes-tittle{
     h2.primeiro-titulo{
-        text-indent: 105px;
+        text-indent: 64px;
     }
 }
 
@@ -257,7 +257,7 @@ p.segundo-titulo{
     }
     .pacotes-tittle{
         h2.primeiro-titulo{
-            text-indent: 36px;
+            text-indent: 4px;
         }
     }
     .parceiros{

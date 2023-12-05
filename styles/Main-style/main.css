@@ -321,11 +321,11 @@ html {
   margin-bottom: -8rem;
 }
 .pacotes-tittle h2.primeiro-titulo {
-  text-indent: 72px;
+  text-indent: 26px;
 }
 .pacotes-tittle p.segundo-titulo {
   color: white;
-  text-shadow: none;
+  text-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3803921569);
 }
 
 .pacotes {
@@ -393,7 +393,7 @@ p.segundo-titulo {
   font-size: 100px;
   text-align: center;
   letter-spacing: 4px;
-  text-shadow: 0px 1px 12px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3803921569);
 }
 
 @media screen and (max-width: 1000px) {
@@ -437,7 +437,7 @@ p.segundo-titulo {
     font-size: 80px;
   }
   .pacotes-tittle h2.primeiro-titulo {
-    text-indent: 105px;
+    text-indent: 64px;
   }
   .parceiros-details {
     margin: 0 10px;
@@ -471,7 +471,7 @@ p.segundo-titulo {
     gap: 24px;
   }
   .pacotes-tittle h2.primeiro-titulo {
-    text-indent: 36px;
+    text-indent: 4px;
   }
   .parceiros {
     padding-bottom: 10vh;
