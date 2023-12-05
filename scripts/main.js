@@ -25,3 +25,16 @@ function showDialogWhatsapp(){
         dialogBox.classList.add('open-wpp');
     }
 }
+
+function showNotification(){
+    const whatsappIcon = document.querySelector('#whatsapp-icon');
+    whatsappIcon.setAttribute('src', '/styles/assets/whatsapp-button/whatsapp-notification-icon.svg')
+
+    if(whatsappIcon.classList.contains('animated')){
+        whatsappIcon.classList.remove('animated')
+    }else{
+        whatsappIcon.classList.add('animated');
+    }
+}
+
+setTimeout(showNotification, 1500)
