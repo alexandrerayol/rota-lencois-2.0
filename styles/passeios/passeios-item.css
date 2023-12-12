@@ -19,13 +19,14 @@ main {
 .passeio img {
   width: 100%;
 }
-.passeio h2 {
+.passeio h2, .passeio a {
   width: 100%;
   text-align: left;
   font-weight: 700;
   font-size: 2rem;
   color: #00979C;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 .passeio p {
   font-size: 1rem;
@@ -35,7 +36,6 @@ main {
   text-align: justify;
 }
 .passeio a {
-  display: inline-block;
   width: 200px;
   cursor: pointer;
   margin-top: 1rem;

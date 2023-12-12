@@ -19,17 +19,18 @@ main{
     gap: 1.5rem;
 
     filter: drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.1));
-
     img{
         width: 100%;
     }
-    h2{
+
+    h2, a{
         width: 100%;
         text-align: left;
         font-weight: 700;
         font-size: 2rem;
         color: #00979C;
         font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
     }
     p{
         font-size: 1rem;
@@ -40,7 +41,6 @@ main{
     }
 
     a{
-        display: inline-block;
         width: 200px;
         cursor: pointer;
         margin-top: 1rem;
