@@ -3,5 +3,16 @@
     "trailingSlash": true,
     "rewrites": [
       { "source": "/(.*)", "destination": "/" }
+    ],
+
+    "routes": [
+      {
+        "src": "/404",
+        "dest": "/pages/error/index.html"
+      },
+      {
+        "src": "/500",
+        "dest": "/pages/error/index.html"
+      }
     ]
-  }
+}
