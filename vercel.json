@@ -1,9 +1,7 @@
 {
-    "cleanUrls": true,
-    "trailingSlash": true,
-    "routes": [
-      { "handle": "filesystem" },
-      { "src": "/(.*)", "status": 404, "dest": "/pages/error/index.html" }
-    ]
-
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
