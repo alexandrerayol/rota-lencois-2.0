@@ -468,6 +468,9 @@ section.left-section div img {
 section.right-section {
   background-color: rgba(0, 153, 158, 0.1);
   border-radius: 0.5rem;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1rem 0 2rem 0;
 }
 section.right-section .right-content {
   display: flex;

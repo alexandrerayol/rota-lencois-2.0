@@ -74,8 +74,10 @@ section.left-section{
 section.right-section{
     background-color: rgba(0, 153, 158, 0.10);
     border-radius: .5rem;
-    
+    height: max-content;
+    padding: 1rem 0 2rem 0;
     .right-content{
+        
         display: flex;
         align-items: center;
         justify-content: center;
