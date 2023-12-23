@@ -1,81 +1,79 @@
+
+
 main{
-    display: grid;
-    grid-template-columns: 70% 30%;
-    gap: 1rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    margin-bottom: 4rem;
-    padding: 0 1rem;
+    margin: auto;
+    max-width: 1200px;
+    padding: 2rem
 }
 
-.left-section{
+.description{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 150%;
 
     h2{
-        margin: 1rem 0;
         color: #00ADBA;
     }
-    p{
-        line-height: 150%;
-    }
-    ul{
-        list-style-position: inside;
-    }
-    .horarios{
-        border: 1px solid rgba(0, 0, 0, 0.25);
-        border-radius: .25rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 2rem;
-        gap: 1rem;
-        margin: 2rem 0;
-        
-        div{
-            text-align: center;
-            h4{
-                color: #00ADBA;
-            }
-            span{
-                display: inline-block;
-                padding: 0 .5rem;
-                margin-top: 1rem;
-            }
-            span + span{
-                border-left: 1px solid rgba(0, 0, 0, 0.25);
-            }
-        }
-
-        div + div{
-            border-left: 1px solid rgba(0, 0, 0, 0.25);
-        }
+    h3{
+        color: rgba(0, 0, 0, 0.75);
     }
 }
 
-.right-section{
-    .right-images{
+.transporte-ida, .transporte-volta, .outras-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.outras-info{
+    section + section{
+        margin-top: 1rem;
+    }
+
+    section{
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        justify-content: center;
         gap: 1rem;
-        img{
-            width: 100%;
-            border-radius: .5rem;
-            filter: drop-shadow(1px 1px 12px rgba(0, 0, 0, 0.25));
+
+        ul{
+            list-style-position: inside;
         }
     }
 }
 
-@media(max-width: 720px){
-    main{
+.horarios{
+    border-radius: .25rem;
+    background-color: rgba(127, 255, 212, 0.25);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    box-shadow: 1px 1px 8px 8px rgba(0, 0, 0, 0.1);
+
+    div{
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: .25rem;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
+        padding: 1rem;
     }
 
-    .right-images{
-        img{
-            width: 100%;
-        }
+    .ida{
+        height: 8rem;
+    }
+
+    .volta{
+        height: 12rem;
     }
 }

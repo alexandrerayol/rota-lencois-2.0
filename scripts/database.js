@@ -38,6 +38,10 @@ const numberList = [
     {
         id: 4,
         number: '9891508966'
+    },
+    {
+        id: 5,
+        number: '9887209993'
     }
     ]
 
@@ -53,7 +57,7 @@ async function getId(){
           });
     }catch{
         console.log('erro durante a requisição ao banco de dados.')
-        const numeroAleatorio = Math.floor(Math.random() * 5); // 0 a 4
+        const numeroAleatorio = Math.floor(Math.random() * numberList.length); // 0 a 4
         number = numeroAleatorio;
     }
 
@@ -62,7 +66,7 @@ async function getId(){
     //Tratamento de erro durante a gravação no banco de dados
     try{
         const docRef = doc(db, "numbers", "ynS2UhlxqYyE8Fvdv3Hu");
-        if(number >= 4){
+        if(number >= (numberList.length - 1)){
             newData = {id: 0}
         }else{
             number++
