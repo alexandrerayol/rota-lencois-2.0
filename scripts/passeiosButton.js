@@ -43,6 +43,11 @@ const numberList = [
     }
     ]
 
+
+const tituloDaPagina = document.title;
+const urlAtual = window.location.href;
+const mensagem = `Olá! Gostaria de informações sobre ${tituloDaPagina}\n${urlAtual}\nPoderia me ajudar?`
+
 async function getId(){
     //tratamento de erro na requisição 
     try{
@@ -56,10 +61,10 @@ async function getId(){
         number = numeroAleatorio;
     }
 
-    whatsappLink.href = `https://api.whatsapp.com/send/?phone=55${numberList[number].number}&text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0`
+    whatsappLink.href = `https://wa.me/${numberList[number].number}?text=${encodeURIComponent(mensagem)}`
 
     for(let i of passeiosButton){
-        i.href = `https://api.whatsapp.com/send/?phone=55${numberList[number].number}&text=Ol%C3%A1%21+Gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&app_absent=0`
+        i.href = `https://wa.me/${numberList[number].number}?text=${encodeURIComponent(mensagem)}`
     }
     //Tratamento de erro durante a gravação no banco de dados
     try{

@@ -48,6 +48,7 @@ const numberList = [
 const tituloDaPagina = document.title;
 const urlAtual = window.location.href;
 const mensagem = `Olá! Gostaria de informações sobre ${tituloDaPagina}\n${urlAtual}\nPoderia me ajudar?`
+
 async function getId(){
     //tratamento de erro na requisição 
     try{
@@ -57,7 +58,7 @@ async function getId(){
           });
     }catch{
         console.log('erro durante a requisição ao banco de dados.')
-        const numeroAleatorio = Math.floor(Math.random() * numberList.length); // 0 a 4
+        const numeroAleatorio = Math.floor(Math.random() * numberList.length);
         number = numeroAleatorio;
     }
 
